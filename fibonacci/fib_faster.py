@@ -1,19 +1,5 @@
 # Uses python3
-from time import sleep, perf_counter as pc
-
-t0 = pc()
-
-
-
-def calc_fib(n):
-    if (n <= 1):
-        return n
-
-    return calc_fib(n - 1) + calc_fib(n - 2)
-
-
 dic = {'key': 0}
-
 
 def calc_fib_more_faster(n):
     if (n <= 1):
@@ -38,7 +24,4 @@ n = int(input())
 # print(calc_fib(n))
 # print(pc()-t0)
 
-t0 = pc()
 print(calc_fib_more_faster(n))
-print(pc()-t0)
-
